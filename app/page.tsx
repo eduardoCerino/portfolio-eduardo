@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <div
-      className=" max-w-xl border bg-background text-foreground shadow-xl backdrop-blur-sm sm:my-6 rounded-xl min-h-screen mx-6 md:mx-auto my-6"
+      className=" max-w-xl border bg-background text-foreground shadow-xl backdrop-blur-sm sm:my-6 rounded-xl min-h-screen mx-3 md:mx-auto my-3"
       style={{ backgroundImage: "url('/images/noise.png')" }}
 
     >
