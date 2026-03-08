@@ -157,14 +157,14 @@ export default function Home() {
             >
               <Document className="h-4 md:h-5 transition-transform duration-700 " />
 
-              <span className="truncate transition-transform duration-700 ">
+              <Link href={siteConfig.author.resume} target="_blank" rel="noopener noreferrer" className="truncate transition-transform duration-700 ">
                 Ver Curriculum
-              </span>
+              </Link>
             </a>
 
             <a
               title="Resume & Cirriculum Vitae"
-              href={siteConfig.author.resume}
+              href={siteConfig.author.resumeDownload}
               target="_blank"
               rel="noopener noreferrer"
               className={cn(

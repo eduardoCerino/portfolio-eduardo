@@ -16,7 +16,8 @@ export const siteConfig = {
     location: "Tabasco, México",
     pronouns: "Español, Inglés",
     resume:
-      "#",
+        "https://drive.google.com/file/d/1wPfwYXCSO9fLS3duQ27MY_Gvk5qdlt_4/view?usp=sharing",
+    resumeDownload: "https://drive.google.com/uc?export=download&id=1wPfwYXCSO9fLS3duQ27MY_Gvk5qdlt_4",
   },
 
   links: {
