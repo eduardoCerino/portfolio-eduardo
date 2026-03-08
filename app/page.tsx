@@ -201,7 +201,7 @@ export default function Home() {
               >
                 <Image
                   alt="logo"
-                  src="/images/codifin_logo.jpeg"
+                  src="/images/logo-de-igardis.svg"
                   width={90}
                   height={90}
                   className="object-cover duration-300 rounded-md"
