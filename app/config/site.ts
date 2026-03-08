@@ -12,7 +12,7 @@ export const siteConfig = {
     bio: "Desarrollador Web",
     mail: "cerinosastrej@gmail.com",
     description:
-      "Desarrollador web con mentalidad de crecimiento. Construyo, optimizo y escalo soluciones que impulsan ventas, automatizan procesos y ahorran tiempo.",
+      "Full-stack dev enfocado en rendimiento y escalabilidad. Convierto requisitos en código limpio, sistemas automatizados y productos que generan resultados reales.",
     location: "Tabasco, México",
     pronouns: "Español, Inglés",
     resume:

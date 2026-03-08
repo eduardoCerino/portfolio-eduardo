@@ -1,4 +1,4 @@
-import { FacturApi, Firebase, Git, GitHub, JavaScript, MongoDB, MySQl, NextJS, NodeJS, OpenAI, PostgreSQL, React, ReactNative, Skydropx, Stripe, Supabase, TailwindCSS, TypeScript } from "../components/icons";
+import { FacturApi, Firebase, Git, GitHub, JavaScript, MongoDB, Figma, MySQl, NextJS, NodeJS, OpenAI, PostgreSQL, React, ReactNative, Resend, MercadoPago, Skydropx, Stripe, Supabase, TailwindCSS, TypeScript, Wordpress } from "../components/icons";
 
 export const services = [
     {
@@ -100,6 +100,18 @@ export const services = [
       href: "https://www.mysql.com/",
       icon: MySQl,
     },
+    {
+        name: "Figma",
+        description: "Diseño de interfaces modernas y atractivas. Creación de prototipos y maquetación de interfaces.",
+        href: "https://www.figma.com/",
+        icon: Figma,
+    },
+     {
+        name: "Wordpress/WooCommerce",
+        description: "Creación de páginas web y tiendas en línea con WordPress y WooCommerce.",
+        href: "https://www.wordpress.com/",
+        icon: Wordpress,
+    },
   ];
   
   
@@ -107,25 +119,37 @@ export const services = [
   export const implementations = [
     {
       name: "Stripe",
-      description: "Cobros simples, seguros y automatizados. Hago que tu negocio reciba pagos sin fricción.",
+      description: "Integración completa de pagos: checkout, webhooks, suscripciones y reembolsos. Flujos de cobro robustos que no fallan en producción.",
       href: "https://stripe.com/",
       icon: Stripe,
     },
     {
+      name: "MercadoPago",
+      description: "Pagos localizados para LATAM: Checkout Pro, preferencias de pago, webhooks y validación de IPN. Integración lista para el mercado mexicano y regional.",
+      href: "https://www.mercadopago.com.mx/",
+      icon: MercadoPago,
+    },
+    {
       name: "OpenAI",
-      description: "IA aplicada para resolver problemas reales: automatizar, crear y optimizar procesos.",
+      description: "De prompts a features reales: análisis de documentos, generación de contenido y automatización inteligente integrados directo en tu stack.",
       href: "https://openai.com/",
       icon: OpenAI,
     },
     {
+      name: "Resend",
+      description: "Emails transaccionales con entrega garantizada: verificaciones, notificaciones y campañas disparadas por eventos — con React Email y logs en tiempo real.",
+      href: "https://resend.com/",
+      icon: Resend,
+    },
+    {
       name: "Skydropx",
-      description: "Automatizo envíos y logística para que vender online sea rápido y rentable.",
+      description: "Logística conectada al backend: cotización, generación de guías y rastreo de envíos automatizados en el flujo de tu e-commerce.",
       href: "https://skydropx.com/",
       icon: Skydropx,
     },
     {
       name: "Facturapi",
-      description: "Facturación automatizada y sin errores. De la venta al CFDI en segundos.",
+      description: "CFDI 4.0 automatizado: emisión, cancelación y timbrado integrados al proceso de venta. Cumplimiento SAT sin intervención manual.",
       href: "https://facturapi.io/",
       icon: FacturApi,
     },

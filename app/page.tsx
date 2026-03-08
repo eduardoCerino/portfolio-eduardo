@@ -8,16 +8,14 @@ import {
   ClipboardCheck,
   Contact,
   Document,
-  Laptop,
   MailOpen,
   MapPin,
   Verified,
 } from "./components/icons";
-import { implementations, services, technologies } from "./config/constants";
+import { implementations, technologies } from "./config/constants";
 import { ThemeSwitcher } from "./components/theme/theme-switcher";
 import Link from "next/link";
-import { FollowerPointerCard, FollowPointer } from "@/components/ui/following-pointer";
-import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
+
 
 export default function Home() {
 
@@ -213,6 +211,64 @@ export default function Home() {
               </Link>
 
               <div className="flex flex-col items-start">
+                <h3 className="text-xl font-bold">iGardis</h3>
+                <p className="font-medium">Desarrollador Web FullStack</p>
+
+                <time className="mt-2 text-sm uppercase tracking-widest text-foreground/70">
+                  <span>
+                    Octubre 2024 - Marzo 2025
+                  </span>
+                </time>
+
+                <ul className="my-4 list-disc space-y-2 pl-5 tracking-tight text-foreground/60 hover:text-foreground/75">
+                  <li>
+                    Arquitecté un <span className="font-medium">marketplace multi-proveedor</span> completo con <span className="font-medium">Next.js 15</span>, <span className="font-medium">Firebase</span> y backend SQL propio — desde catálogo y carrito hasta checkout y órdenes separadas por proveedor.
+                  </li>
+                  <li>
+                    Implementé <span className="font-medium">Stripe Connect</span> con <span className="font-medium">Destination Charges</span> para distribución automática de comisiones entre proveedores, soportando pagos con tarjeta, <span className="font-medium">OXXO</span> y <span className="font-medium">SPEI</span>.
+                  </li>
+                  <li>
+                    Integré <span className="font-medium">Skydropx API</span> para cotizaciones de envío en tiempo real — calculando dimensiones, validando cobertura por proveedor y combinando tarifas de múltiples transportistas en paralelo.
+                  </li>
+                  <li>
+                    Desarrollé un sistema completo de <span className="font-medium">facturación fiscal mexicana</span> con <span className="font-medium">FacturaAPI</span> — generación de <span className="font-medium">CFDI</span>, validación de RFC, régimen fiscal y envío automático de facturas por email.
+                  </li>
+                  <li>
+                    Construí el <span className="font-medium">carrito de compras</span> con sincronización en tiempo real entre pestañas usando <span className="font-medium">BroadcastChannel API</span>, persistencia con <span className="font-medium">Zustand</span> y validación de stock al momento del checkout.
+                  </li>
+                  <li>
+                    Apliqué arquitectura <span className="font-medium">feature-based</span> con separación estricta de responsabilidades — <span className="font-medium">Actions</span>, <span className="font-medium">Services</span>, <span className="font-medium">Schema</span> y <span className="font-medium">Components</span> por dominio para máxima escalabilidad.
+                  </li>
+                  <li>
+                    Optimicé performance con <span className="font-medium">dynamic imports</span>, <span className="font-medium">lazy loading</span>, <span className="font-medium">caché de respuestas</span>, paginación de productos y <span className="font-medium">View Transitions API</span> experimental de Next.js.
+                  </li>
+                  <li>
+                    Desplegué en <span className="font-medium">Vercel</span> con autenticación segura vía <span className="font-medium">Firebase App Check + ReCAPTCHA v3</span>, sesiones con cookies <span className="font-medium">httpOnly</span> y middleware de protección de rutas privadas.
+                  </li>
+                </ul>
+              </div>
+
+
+            </div>
+            <div className="relative flex max-w-2xl items-start gap-x-4 before:absolute before:bottom-0 before:left-9 before:top-[5rem] before:h-[calc(100%-70px)] before:w-[1px] before:bg-muted lg:gap-x-6">
+              <Link
+                href="#"
+                rel="noreferrer noopener"
+                target="_blank"
+                className="relative grid min-h-[80px] min-w-[80px] place-items-center text-clip rounded-md border border-border bg-secondary/50 p-1"
+              >
+                <Image
+                  alt="logo"
+                  src="/images/codifin_logo.jpeg"
+                  width={90}
+                  height={90}
+                  className="object-cover duration-300 rounded-md"
+                />
+
+
+              </Link>
+
+              <div className="flex flex-col items-start">
                 <h3 className="text-xl font-bold">Codifin</h3>
                 <p className="font-medium">Desarrollador Web FullStack</p>
 
@@ -224,26 +280,38 @@ export default function Home() {
 
                 <ul className="my-4 list-disc space-y-2 pl-5 tracking-tight text-foreground/60 hover:text-foreground/75">
                   <li>
-                    Inicié impartiendo <span className="font-medium">clases de programación</span> para capacitar a recién egresados en tecnologías web modernas.
+                    Arranqué impartiendo <span className="font-medium">clases de programación</span> — onboarding de egresados a tecnologías web modernas y flujos de trabajo reales.
                   </li>
                   <li>
-                    Formé parte del equipo de desarrollo de un <span className="font-medium">dashboard corporativo</span> para una empresa de reclutamiento, construido con <span className="font-medium">Next.js</span> y <span className="font-medium">Firebase</span>.
+                    Desarrollé un <span className="font-medium">dashboard corporativo</span> para plataforma de reclutamiento con <span className="font-medium">Next.js</span> y <span className="font-medium">Firebase</span>, desde arquitectura hasta deploy.
                   </li>
                   <li>
-                    Implementé funcionalidades con <span className="font-medium">Firebase Realtime Database</span>, <span className="font-medium">Authentication</span> y <span className="font-medium">Cloud Functions</span>.
+                    Implementé backend serverless con <span className="font-medium">Firebase Realtime Database</span>, <span className="font-medium">Auth</span> y <span className="font-medium">Cloud Functions</span> para lógica de negocio crítica.
                   </li>
                   <li>
-                    Integré <span className="font-medium">OpenAI</span> para desarrollar un sistema de lectura automática y análisis de <span className="font-medium">CVs de candidatos</span>.
+                    Integré <span className="font-medium">OpenAI API</span> para parseo y análisis semántico automático de <span className="font-medium">CVs</span> — reduciendo tiempo de revisión manual del equipo de RR.HH.
                   </li>
                   <li>
-                    Integré <span className="font-medium">endpoints en Next.js</span> para validación de documentos oficiales (<span className="italic">IMSS, INE, CURP, RFC</span>, entre otros).
+                    Integré endpoints en <span className="font-medium">Next.js API Routes</span> para validación en tiempo real de documentos oficiales mexicanos (<span className="italic">IMSS, INE, CURP, RFC</span>).
                   </li>
                   <li>
-                    Implementé un sistema de <span className="font-medium">rastreo de equipos de empleados</span> mediante un servicio externo y <span className="font-medium">Google Maps API</span> para visualización en tiempo real.
+                    Desarrollé módulo de <span className="font-medium">geolocalización en tiempo real</span> de empleados con <span className="font-medium">Google Maps API</span>, integrado a servicio externo de rastreo de dispositivos.
+                  </li>
+
+                  <li>
+                    Diseñé el <span className="font-medium">sistema de roles y permisos</span> del dashboard con <span className="font-medium">RBAC</span> — controlando acceso granular por módulo según tipo de usuario.
+                  </li>
+
+                  <li>
+                    Arquitecté un sistema de <span className="font-medium">notificaciones en tiempo real</span> con <span className="font-medium">Firebase Cloud Messaging</span> para alertas críticas del proceso de reclutamiento.
                   </li>
                   <li>
-                    Optimizé el rendimiento del dashboard con <span className="font-medium">lazy loading</span> para tablas, <span className="font-medium">paginación dinámica</span> y <span className="font-medium">búsqueda en tiempo real</span> de candidatos.
+                    Reduje el <span className="font-medium">tiempo de carga inicial en ~40%</span> mediante <span className="font-medium">code splitting</span>, optimización de bundles y caching estratégico con <span className="font-medium">SWR</span>.
                   </li>
+                  <li>
+                    Implementé <span className="font-medium">autenticación multifactor</span> y manejo seguro de sesiones — cumpliendo estándares de seguridad para datos sensibles de candidatos.
+                  </li>
+
                 </ul>
               </div>
 
@@ -276,19 +344,19 @@ export default function Home() {
 
                 <ul className="my-4 list-disc space-y-2 pl-5 tracking-tight text-foreground/60 hover:text-foreground/75">
                   <li>
-                    Participé en un equipo ágil bajo la metodología <span className="font-medium">Scrum</span> para el desarrollo de una plataforma de cursos en línea.
+                    Trabajé en equipo ágil con <span className="font-medium">Scrum</span> — sprints, dailies y entregas iterativas para una plataforma de <span className="font-medium">cursos en línea</span> con usuarios reales.
                   </li>
                   <li>
-                    Desarrollé el <span className="font-medium">frontend</span> utilizando <span className="font-medium">React</span> y <span className="font-medium">Material UI</span>, asegurando una interfaz moderna y responsiva.
+                    Construí el <span className="font-medium">frontend completo</span> con <span className="font-medium">React</span> y <span className="font-medium">Material UI</span> — componentes reutilizables, diseño responsivo y UX consistente en todos los flujos.
                   </li>
                   <li>
-                    Implementé componentes reutilizables y optimicé la carga de datos mediante <span className="font-medium">React Hooks</span> y manejo de estado eficiente.
+                    Arquitecté el <span className="font-medium">sistema de estado global</span> con <span className="font-medium">React Hooks</span> y <span className="font-medium">Context API</span>, reduciendo re-renders innecesarios y mejorando la fluidez de la experiencia.
                   </li>
                   <li>
-                    Colaboré con el equipo de backend para integrar servicios mediante <span className="font-medium">APIs REST</span> desarrolladas en <span className="font-medium">Express.js</span>.
+                    Integré <span className="font-medium">APIs REST</span> de <span className="font-medium">Express.js</span> para consumo de datos de cursos, autenticación y progreso del usuario — coordinando directamente con el equipo backend.
                   </li>
                   <li>
-                    Contribuí al despliegue y mantenimiento de la aplicación en entornos de prueba y producción.
+                    Participé en el pipeline de <span className="font-medium">deploy a producción</span> — manejo de entornos, variables de configuración y validación pre-release para garantizar cero downtime.
                   </li>
                 </ul>
               </div></div>
@@ -384,10 +452,15 @@ export default function Home() {
           </div>
 
           {implementations.map(({ name, description, href, icon: Icon }, i) => (
-            <li key={i} className="flex items-center gap-x-2 p-2">
-              <Icon />
-              <a href={href} rel="noreferrer noopener" target="_blank" aria-label={name} className="my-auto min-w-fit leading-3  underline underline-offset-4 duration-500 animate-in zoom-in-50 hover:underline hover:text-brand-green dark:hover:text-brand-green">
-                {name}</a>-<span className="truncate text-foreground/60 duration-500 animate-in zoom-in-50">{description}</span></li>
+            <li key={i} className="flex flex-col gap-y-1 p-2">
+              <div className="flex items-center gap-x-2">
+                <Icon />
+                <a href={href} rel="noreferrer noopener" target="_blank" aria-label={name} className="my-auto min-w-fit leading-3  underline underline-offset-4 duration-500 animate-in zoom-in-50 hover:underline hover:text-brand-green dark:hover:text-brand-green">
+                  {name}
+                </a>
+              </div>
+              <span className="text-foreground/60 duration-500 animate-in zoom-in-50 pl-7">{description}</span>
+            </li>
           ))}
         </div>
 
